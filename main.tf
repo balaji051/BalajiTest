@@ -53,7 +53,7 @@ AWS Instance
 
 resource "aws_instance" "ec2-myfirst-terraform-ins" {
   ami           = "ami-052c08d70def0ac62"
-  vpc_security_group_ids = [aws_security_group.myfirst-sg.id]
+  vpc_security_group_ids = ["${aws_security_group.myfirst-sg.id}"]
   instance_type = "t2.micro"
 
   tags = {
