@@ -2,9 +2,9 @@
 /*
 resource key pair
 */
-resource "aws_key_pair" "deployer_balaji" {
+/*resource "aws_key_pair" "deployer_balaji" {
   key_name   = "deployer-key"
-}
+}*/
 /*
   create Provider
 */
